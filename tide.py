@@ -13,7 +13,7 @@ def area_cal(x, y, r, d1, d2):
     return reg_cal, tri_cal, cir_cal, sem_cal, squ_cal, rho_cal, pen_cal
 
 
-reg, tri, cir, sem, squ, rho = area_cal(6, 4, 3)
+reg, tri, cir, sem, squ, rho, pen = area_cal(6, 4, 3)
 
 print(f'หาสี่เหลี่ยม = {reg}')
 print(f'หาสามเหลี่ยม = {tri}')
