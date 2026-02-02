@@ -9,11 +9,12 @@ def area_cal(x, y, r, d1, d2):
     squ_cal = x * x
     rho_cal = 0.5 * d1 * d2
     pen_cal = (5 * a**2) / (4 * math.tan(math.pi / 5))
+    hex_cal = (3 * math.sqrt(3) * a**2) / 2
     
-    return reg_cal, tri_cal, cir_cal, sem_cal, squ_cal, rho_cal, pen_cal
+    return reg_cal, tri_cal, cir_cal, sem_cal, squ_cal, rho_cal, pen_cal, hex_cal
 
 
-reg, tri, cir, sem, squ, rho, pen = area_cal(6, 4, 3)
+reg, tri, cir, sem, squ, rho, pen, hex = area_cal(6, 4, 3)
 
 print(f'หาสี่เหลี่ยม = {reg}')
 print(f'หาสามเหลี่ยม = {tri}')
@@ -22,3 +23,4 @@ print(f'ครึ่งวงกลม = {sem}')
 print(f'หาสี่เหลี่ยมจัตุรัส = {squ}')
 print(f'หาพื้นที่สี่เหลี่ยมด้านขนาน = {rho}')
 print(f'หาพื้นที่รูปห้าเหลี่ยม = {pen}')
+print(f'หาพื้นที่รูปหกเหลี่ยม = {hex}')
